@@ -11,7 +11,7 @@ int* solution(int lottos[], size_t lottos_len, int win_nums[], size_t win_nums_l
     int c = 0; //0의 개수 세기
     
     int to = 0; //최고 등수
-    int arr[] = {0,6,5,4,3,2,1};
+    int arr[] = {6,6,5,4,3,2,1};
     
     for(int i = 0; i <lottos_len; i++){
         for(int j = 0; j < win_nums_len; j++){
@@ -29,12 +29,6 @@ int* solution(int lottos[], size_t lottos_len, int win_nums[], size_t win_nums_l
     answer[0] = arr[to];
     answer[1] = arr[a];
     
-    if(a == 0){
-        answer[1] = 6;
-    }
-    if(to == 0){
-        answer[0]= 6;
-    }
     
     return answer;
 }
