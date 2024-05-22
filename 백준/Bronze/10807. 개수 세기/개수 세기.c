@@ -2,24 +2,23 @@
 
 int main(void) {
 
-	int array[101];
-	int a;
-	int b;
-	int num = 0;
+	int count;
+	int n[101];
+	int ch;
+	int a = 0;
+	scanf("%d", &count);
 
-	
-	scanf("%d", &a);
-	for (int i = 0; i < a; i++)
+	for (int i = 0; i < count; i++)
 	{
-		scanf("%d", &array[i]); //array[i]값에 뭐가 들어가는지
+		scanf("%d", &n[i]);
 	}
-	scanf("%d", &b);
-	for (int i = 0; i < a; i++)
+	scanf("%d", &ch);
+	for (int i = 0; i < count; i++)
 	{
-		if (b == array[i]) { //array[i]의 값이 b와 일치한다면
-			num++;
+		if (n[i] == ch) {
+			a++;
 		}
 	}
-	printf("%d", num);
+	printf("%d", a);
 	return 0;
 }
