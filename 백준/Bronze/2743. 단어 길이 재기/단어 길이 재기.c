@@ -1,10 +1,15 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void) {
+	
+	char n[101];
+	int ch = 0;
+	scanf("%s", n);
 
-	int a[101];
-	scanf("%s", a);
-	printf("%d", strlen(a));
+	for (int i = 0; n[i] != '\0'; i++) {
+		ch++;
+	}
+	printf("%d", ch);
 
+	return 0;
 }
